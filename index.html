@@ -21,9 +21,19 @@
   <body>
     <h1 class="count">Counter</h1>
     <div class="btns">
-      <button type="button" class="btn btn-success">Increase</button>
-      <button type="button" class="btn btn-secondary">Reset</button>
-      <button type="button" class="btn btn-danger">Decrease</button>
+      <!-- increase -->
+      <button onclick="add()" type="button" class="btn btn-success">
+        Increase
+      </button>
+      <p class="increase"></p>
+      <!-- reset -->
+      <button onclick="reset()" type="button" class="btn btn-secondary">
+        Reset
+      </button>
+      <!-- decrease -->
+      <button onclick="decrease()" type="button" class="btn btn-danger">
+        Decrease
+      </button>
 
       <script src="../Counter/js/script.js"></script>
     </div>
