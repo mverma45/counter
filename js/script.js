@@ -1,8 +1,13 @@
 // increase number
-let num = document.querySelector('.increase')
+// let num = document.querySelector('.increase')
+// let a = 0;
+// a++;
+// alert(a);
+
+let i = 0;
 function add() {
-    // let add = num.innerHTML = `${increase++}`
-    alert("adding one");
+    document.getElementById('.increase')
+    i++;
 }
 
 // reset counter 
@@ -13,8 +18,8 @@ function reset() {
 }
 
 // decrease number
-let num3 = document.querySelector('.decrease')
-function decrease() {
-    // let add = num.innerHTML = `${increase++}`
-    alert("subtracting one");
-}
+// let num3 = document.querySelector('.decrease')
+// function decrease() {
+//     // let add = num.innerHTML = `${increase++}`
+//     alert("subtracting one");
+// }
