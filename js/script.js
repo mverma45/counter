@@ -9,12 +9,19 @@ function add() {
     document.getElementById('.increase')
     i++;
 }
+// reset counter
+// let num2 = document.querySelector('.reset')
+// function reset() {
+//     let add = num.innerHTML = `${increase++}`
+//     alert("resetting");
+// }
 
-// reset counter 
-let num2 = document.querySelector('.reset')
-function reset() {
-    // let add = num.innerHTML = `${increase++}`
-    alert("resetting");
+// decrease number 
+let y = 11;
+function sub() {
+    document.getElementById('.decrease')
+    y--;
+    console.log(y)
 }
 
 // decrease number
