@@ -8,6 +8,7 @@ let i = 0;
 function add() {
     document.getElementById('.increase')
     i++;
+    console.log(i)
 }
 // reset counter
 // let num2 = document.querySelector('.reset')
