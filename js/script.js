@@ -6,10 +6,17 @@
 
 let i = 0;
 function add() {
-    document.getElementById('.increase')
-    i++;
-    console.log(i)
+document.getElementById('.increase')
+    // a.innerHTML =
+    // document.write(i++)    
+    console.log(i++)
 }
+
+// reset counter
+
+
+
+
 // reset counter
 // let num2 = document.querySelector('.reset')
 // function reset() {
