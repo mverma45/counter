@@ -15,17 +15,17 @@ btns.forEach((btn) => {
             count = 0;
         }
     
-        // if (count > 0) {
-        //     counter.styles.color = 'green';
-        // }
+        if (count > 0) {
+            counter.style.color = 'green';
+        }
     
-        // if (count < 0) {
-        //     counter.styles.color = 'red';
-        // }
+        if (count < 0) {
+            counter.style.color = 'red';
+        }
 
-        // if (count === 0) {
-        //     counter.styles.color = 'black';
-        // }
+        if (count === 0) {
+            counter.style.color = 'black';
+        }
 
         counter.textContent = count;
 
