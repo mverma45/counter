@@ -1,40 +1,33 @@
 // increase number
-// let num = document.querySelector('.increase')
-// let a = 0;
-// a++;
-// alert(a);
+let counter = document.querySelector('#counter')
+let btns = document.querySelectorAll('.btn')
 
-let i = 0;
-function add() {
-document.getElementById('.increase')
-    // a.innerHTML =
-    // document.write(i++)    
-    console.log(i++)
-}
+let count = 0;
+btns.forEach((btn) => {
+    btn.addEventListener('click', (e) => {
+        const styles = e.currentTarget.classList
 
-// reset counter
+        if (styles.contains('btn-success')) {
+            count++
+        } else if (styles.contains('btn-danger')) {
+            count--
+        } else {
+            count = 0;
+        }
+    
+        // if (count > 0) {
+        //     counter.styles.color = 'green';
+        // }
+    
+        // if (count < 0) {
+        //     counter.styles.color = 'red';
+        // }
 
+        // if (count === 0) {
+        //     counter.styles.color = 'black';
+        // }
 
+        counter.textContent = count;
 
-
-// reset counter
-// let num2 = document.querySelector('.reset')
-// function reset() {
-//     let add = num.innerHTML = `${increase++}`
-//     alert("resetting");
-// }
-
-// decrease number 
-let y = 11;
-function sub() {
-    document.getElementById('.decrease')
-    y--;
-    console.log(y)
-}
-
-// decrease number
-// let num3 = document.querySelector('.decrease')
-// function decrease() {
-//     // let add = num.innerHTML = `${increase++}`
-//     alert("subtracting one");
-// }
+    })
+})
